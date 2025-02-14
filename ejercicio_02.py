@@ -8,6 +8,7 @@ salario_empleado = float(input("ingrese el salario del empleado: "))
 #if dara la condicion para saber si cumple con la condicion
 if salario_empleado <= salario_minimo *2:
     print("el empleado tiene derecho al auxilio de transporte")
+    
 else:
     print ("empleado gana mas de dos salarios \nempleado no tiene derecho a auxilio de transporte")
     
