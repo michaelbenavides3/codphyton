@@ -2,7 +2,7 @@
 
 #leer el valor de referencia x
 
-x = float (input("Ingresar el valor de referencia x"))
+x = float (input("Ingresar el valor de referencia x: "))
 
 #leer el material utilizado
 
@@ -10,14 +10,24 @@ material = input("Ingresar el material utilizado (plata, platino, oro): ")
 
 #calcular el valor del gramo de material utilizado
 
-if material () == "plata":
+if material.lower () == "plata":
     valor_gramo = 3 * x
 
-elif material () == "platino":
+elif material.lower () == "platino":
     valor_gramo = 5 * x
     
-elif material () == "oro":
+elif material.lower () == "oro":
     valor_gramo = 8 * x
     
 else: 
     print (" material no valido ")
+    
+# calcular el valor del producto
+
+if valor_gramo > 0:
+    peso = float(input("ingrese el peso del producto en gramos:"))
+    valor_producto = valor_gramo * peso
+    print (f"el valor del gramo de {material} es ${valor_gramo}")
+    print (f"el valor del producto es: {valor_producto}")
+else:
+    print("no se puede calcular el valor del producto")
